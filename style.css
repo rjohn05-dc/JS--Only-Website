@@ -1,8 +1,21 @@
 .game-header{
     text-align: center;
+    border: solid;
+    border-color:black;
+    background-color:silver;
 }
 
 .game-nav{
-    justify-content: center;
- 
+padding: 0 1rem;
+display: flex;
+justify-content: center;
+list-style: none;
 }
+
+/* nav ul li{
+margin: 0 1rem;
+}
+nav  ul li a{
+text-decoration:none;
+} */
+

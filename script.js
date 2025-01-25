@@ -8,6 +8,7 @@ const gameInfo={
 },
 navigation:["Home","About","Gallery"],
 
+
 }
 const mythUpdate=(tag,parent,attributes={},content="")=>{
     const element=document.createElement(tag);
@@ -36,12 +37,34 @@ gameInfo.navigation.forEach(link=>{
 })
 
 // Creating the Main Section
+// const main=mythUpdate('main',document.body,{class:"game-main"})
+
 
 // Creating the Gallery Section
+const jungleMap=mythUpdate('jungleMap',document.body,{class:"game-jungleMap"})
+gameInfo.Jungle.forEach(info=>{
+    const article=mythUpdate('article',main,{class:"game-section"})
+    mythUpdate('h2',article,{},info.title);
+    mythUpdate('img',article,{src:info.img, alt:info.title});
+    mythUpdate('p',article,{},info.description);
+});
+Jungle:[
+    {
+    title:"Combat",
+    img:"https://platform.polygon.com/wp-content/uploads/sites/2/2024/08/black-myth-wukong-secret-ending-guide-6.jpg?quality=90&strip=all&crop=7.8125,0,84.375,100",
+    description:"Fighting with a God",
+    },
 
-// const monkeyArmor=`
-// header{text-align:center;}
 
-// `
-// mythUpdate("monkeyArmor",document.head,{},monkeyArmor)
+   { title:"Armor",
+    img:"https://www.blackjack.com.au/wp-content/uploads/2024/06/blackjack_rules.jpg",
+    description:"Fighting in style",
+},
 
+{
+    title:"BlackJack Be Smart",
+    img:"https://crescent.edu/uploads/editor/images/Blackjack.png",
+    description:"Make wise decisions",
+}
+
+]
