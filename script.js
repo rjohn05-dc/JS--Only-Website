@@ -24,6 +24,10 @@ Jungle:[
     title:"Character",
     img:"https://cdn2.steamgriddb.com/grid/2ca75ceab906c68edbc6a3998fd6996b.png",
     description:"Wise Immortal Monkey King",
+
+    title:"Gods",
+    img:"https://i.ytimg.com/vi/c8WCKfUkE_w/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBJtoIC_KRGkbaSU1HDDfAJXYORgw",
+    description:"Don't mess with Wukong",
 },
 ],
 footer:"Game Science © 2024"
@@ -86,6 +90,7 @@ gameInfo.Jungle.forEach(item => {
     mythUpdate("h3", card, {}, item.title);
     mythUpdate("img", card, { src: item.img, alt: item.title });
     mythUpdate("p", card, {}, item.description);
+    
 });
 
 // Creating the footer
